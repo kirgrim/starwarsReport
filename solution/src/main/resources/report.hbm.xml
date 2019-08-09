@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.model.Report" table="report">
+        <id name="report_id" type="integer" column="report_id">
+            <generator class="native" />
+        </id>
+        <property name="query_criteria_character_phrase" type="string" column="query_criteria_character_phrase" />
+        <property name="query_criteria_planet_name" type="string" column="query_criteria_planet_name" />
+        <property name="film_id" type="integer" column="film_id" />
+        <property name="film_name" type="string" column="film_name" />
+        <property name="character_id" type="integer" column="character_id" />
+        <property name="character_name" type="string" column="character_name" />
+        <property name="planet_id" type="integer" column="planet_id" />
+        <property name="planet_name" type="string" column="planet_name" />
+    </class>
+</hibernate-mapping>
